@@ -14,7 +14,7 @@ env:
 
 jobs:
   terraform:
-
+    runs-on: ubuntu-latest
     steps:
       # Your workflow steps go here
       - name: Checkout code
