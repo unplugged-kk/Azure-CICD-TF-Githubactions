@@ -33,6 +33,7 @@ variable "admin_enabled" {
 }
 variable "private_endpoint_dns_name" {
   description = "Private Endpoint DNS Name"
+  default     = "azurecicdkishore.privatelink.blob.core.windows.net"
 }
 
 
