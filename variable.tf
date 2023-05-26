@@ -34,3 +34,28 @@ variable "admin_enabled" {
 variable "private_endpoint_dns_name" {
   description = "Private Endpoint DNS Name"
 }
+
+
+variable "storage_account_tier" {
+  description = "Storage Account Tier"
+  type        = string
+  default     = "Standard"
+}
+
+variable "storage_account_replication_type" {
+  description = "Storage Account Replication Type"
+  type        = string
+  default     = "LRS"
+}
+
+variable "storage_container_access_type" {
+  description = "Storage Container Access Type"
+  type        = string
+  default     = "private"
+}
+
+resource "random_string" "resource_code" {
+  length  = 5
+  special = false
+  upper   = false
+}
