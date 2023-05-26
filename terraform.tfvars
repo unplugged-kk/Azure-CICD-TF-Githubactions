@@ -6,3 +6,4 @@ resource_group_name        = "DevSecops2022"
 location                   = "eastasia"
 acr_sku                    = "Standard"
 admin_enabled              = true
+private_endpoint_dns_name  = azurecicdkishore.privatelink.blob.core.windows.net
